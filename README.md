@@ -1,2 +1,2 @@
 # TicTacToeBot
-A simple AI that plays TicTacToe
+A simple bot that plays TicTacToe
