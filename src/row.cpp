@@ -10,7 +10,7 @@ Row::Row() {
 Row::~Row() {}
 
 void Row::print() {
-  std::cout << pos[0] << "|" << pos[1] << "|" << pos[2] << std::endl;
+  std::cout << pos[0] << " | " << pos[1] << " | " << pos[2] << std::endl;
 }
 
 char &Row::operator[](int i) { return pos[i]; }

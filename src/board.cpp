@@ -36,9 +36,9 @@ bool Board::checkWin() {
 
 void Board::print() {
   rows[0].print();
-  std::cout << "-----" << std::endl;
+  std::cout << "---------" << std::endl;
   rows[1].print();
-  std::cout << "-----" << std::endl;
+  std::cout << "---------" << std::endl;
   rows[2].print();
   std::cout << std::endl << std::endl;
 }
