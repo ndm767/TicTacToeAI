@@ -30,7 +30,7 @@
 *.exe
 *.out
 *.app
-TicTacToeAI
+TicTacToeBot
 
 #ide stuff
 valgrind.*
