@@ -1,2 +1,2 @@
 all:
-	g++ src/*.cpp -o TicTacToeAI -lSDL2 -std=c++17
+	g++ src/*.cpp -o TicTacToeAI -std=c++17
