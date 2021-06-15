@@ -33,7 +33,8 @@ bool Board::checkWin() {
   }
   // check rows
   for (int i = 0; i < 3; i++) {
-    if (rows[i][0] == rows[i][1] && rows[i][1] == rows[i][2]) {
+    if (rows[i][0] == rows[i][1] && rows[i][1] == rows[i][2] &&
+        rows[i][2] != ' ') {
       winner = rows[i][0];
       return true;
     }
@@ -41,18 +42,22 @@ bool Board::checkWin() {
 
   // check columns
   for (int i = 0; i < 3; i++) {
-    if (rows[0][i] == rows[1][i] && rows[1][i] == rows[2][i]) {
+    if (rows[0][i] == rows[1][i] && rows[1][i] == rows[2][i] &&
+        rows[2][i] != ' ') {
       winner = rows[0][i];
       return true;
     }
   }
 
   // check diagonal
-  if (rows[0][0] == rows[1][1] && rows[1][1] == rows[2][2]) {
-    winner = rows[0][0];
+  if (rows[0][0] == rows[1][1] && rows[1][1] == rows[2][2] &&
+      rows[1][1] != ' ') {
+    winner = rows[1][1];
     return true;
-  } else if (rows[0][2] == rows[1][1] && rows[1][1] == rows[2][0]) {
-    winner = rows[0][2];
+  }
+  if (rows[0][2] == rows[1][1] && rows[1][1] == rows[2][0] &&
+      rows[1][1] != ' ') {
+    winner = rows[1][1];
     return true;
   }
 

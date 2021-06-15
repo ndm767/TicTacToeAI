@@ -20,9 +20,10 @@ int main(int argc, char *argv[]) {
 
   b.print();
   char w = b.getWinner();
-  if (w == 'N')
+  if (w == 'N') {
     std::cout << "Nobody wins!" << std::endl;
-  else
+  } else {
     std::cout << w << " wins!" << std::endl;
+  }
   return 0;
 }
