@@ -1,11 +1,11 @@
 #include <iostream>
 
-#include "ai.h"
+#include "aiPlayer.h"
 #include "board.h"
 #include "player.h"
 
 int main(int argc, char *argv[]) {
-  AI ai;
+  AIPlayer ai;
   Player p;
   Board b;
 

@@ -2,10 +2,10 @@
 
 #include "board.h"
 
-class AI {
+class AIPlayer {
 public:
-  AI();
-  ~AI();
+  AIPlayer();
+  ~AIPlayer();
   void makeMove(Board *b);
 
 private:
