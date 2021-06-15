@@ -19,6 +19,10 @@ int main(int argc, char *argv[]) {
   }
 
   b.print();
-  std::cout << b.getWinner() << " wins!" << std::endl;
+  char w = b.getWinner();
+  if (w == 'N')
+    std::cout << "Nobody wins!" << std::endl;
+  else
+    std::cout << w << " wins!" << std::endl;
   return 0;
 }
